@@ -1,1 +1,28 @@
-<p>This is the partial for view 1.</p>
+<!--<p>This is the partial for view 1.</p>-->
+<!--ng-controller="TinyMceController"-->
+    <form method="post">
+        <button ng-click="getContent()">Get content</button>
+        <button ng-click="setContent()">Set content</button>
+        <input type="file" ng-file-select >
+        <a href="#!/view2" target="_blank">View as HTML</a>
+        <button ng-click="viewpdf()">View as PDF</button>
+        <textarea ui-tinymce="tinymceOptions" ng-model="tinymceModel"></textarea>
+        <div id="exportthis">
+            <div id={{$index}} ng-repeat="content in contents">
+                <!--<aside draggable="true" id="dragme">
+                    <div ng-bind-html="content.htmlcontent"></div>
+                </aside>-->
+                <aside draggable="true" id={{content.id}}>
+                    <div class="row">
+                        <div class="col-8"  ng-click="getaside(content.id, $index)">
+                            <div ng-bind-html="content.htmlcontent"></div>
+                        </div>
+                        <div class="col-4" ng-click="deleteaside(content.id, $index)" ng-if="viewmode">
+                            Delete
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <img style="width:100%;" ng-src="{{imageSrc}}">
+        </div>
+    </form>

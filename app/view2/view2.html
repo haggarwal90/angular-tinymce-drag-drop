@@ -1,5 +1,16 @@
-<p>This is the partial for view 2.</p>
-<p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
-</p>
+<div ng-repeat="content in contents">
+  <!--<aside draggable="true" id="dragme">
+      <div ng-bind-html="content.htmlcontent"></div>
+  </aside>-->
+  <aside id={{content.id}}>
+    <div class="row">
+      <div class="col-8"  ng-click="getaside(content.id, $index)">
+        <div ng-bind-html="content.htmlcontent"></div>
+      </div>
+      <div class="col-4" ng-click="deleteaside(content.id, $index)">
+        Delete
+      </div>
+    </div>
+  </aside>
+</div>
+<img style="width:100%;" ng-src="{{imageSrc}}">

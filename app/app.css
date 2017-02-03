@@ -23,3 +23,30 @@
   content: "|";
   padding-right: 0.3em;
 }
+aside {
+  position:  absolute;
+  left: 0;
+  top: 250px; /* set these so Chrome doesn't return 'auto' from getComputedStyle */
+  width: 200px;
+  background: rgba(255,255,255,0.66);
+  border: 2px  solid rgba(0,0,0,0.5);
+  border-radius: 4px; padding: 8px;
+}
+/*aside#dragme0 {
+  position:  absolute;
+  left: 0;
+  top: 250px; /!* set these so Chrome doesn't return 'auto' from getComputedStyle *!/
+  width: 200px;
+  background: rgba(255,255,255,0.66);
+  border: 2px  solid rgba(0,0,0,0.5);
+  border-radius: 4px; padding: 8px;
+}*/
+/*aside#dragme1 {
+  position:  absolute;
+  left: 0;
+  top: 250px; /!* set these so Chrome doesn't return 'auto' from getComputedStyle *!/
+  width: 200px;
+  background: rgba(255,255,255,0.66);
+  border: 2px  solid rgba(0,0,0,0.5);
+  border-radius: 4px; padding: 8px;
+}*/

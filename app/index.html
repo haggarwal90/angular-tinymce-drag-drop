@@ -14,30 +14,37 @@
   <link rel="stylesheet" href="app.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
-<body>
-  <ul class="menu">
+<body >
+  <!--<ul class="menu">
     <li><a href="#!/view1">view1</a></li>
     <li><a href="#!/view2">view2</a></li>
   </ul>
-
+-->
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
   <div ng-view></div>
 
-  <div>Angular seed app: v<span app-version></span></div>
-
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/pdfmake/build/pdfmake.min.js"></script>
+  <script src="//code.angularjs.org/1.5.11/angular-sanitize.js"></script>
+  <script src="//cdn.jsdelivr.net/ngstorage/0.3.6/ngStorage.min.js"></script>
   <script src="app.js"></script>
+  <script>document.write('<base href="' + document.location + '" />');</script>
+  <script type="text/javascript" src="js/upload.js"></script>
   <script src="view1/view1.js"></script>
   <script src="view2/view2.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
+
+  <script type="text/javascript" src="bower_components/tinymce/tinymce.js"></script>
+  <script type="text/javascript" src="bower_components/angular-ui-tinymce/src/tinymce.js"></script>
+  <script type="text/javascript" src="js/html2canvas/dist/html2canvas.js"></script>
 </body>
 </html>
